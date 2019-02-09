@@ -10,8 +10,6 @@ def read_input():
     twos = sum_frequency(2, words_data)
     tres = sum_frequency(3, words_data)
 
-    print(twos)
-    print(tres)
     print(f'checksum: {twos*tres}')
 
 
