@@ -1,13 +1,18 @@
 
 
 def read_input():
-    input_data = ['testidata', 'lol', 'aaaa']
+    input_data = open('input2.txt', 'r')
     words_data = {}
     for word in input_data:
         processed_word = analyze_word(word)
         words_data[word] = processed_word
 
-    sum_frequency(2, words_data)
+    twos = sum_frequency(2, words_data)
+    tres = sum_frequency(3, words_data)
+
+    print(twos)
+    print(tres)
+    print(f'checksum: {twos*tres}')
 
 
 def analyze_word(word):
